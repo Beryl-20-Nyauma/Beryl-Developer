@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Education - Beryl Nyauma</title>
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/navigation.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+      <style>
+        .education-section {
+            min-height: 100vh;
+            padding: 140px 80px 80px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+
+        .education-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            margin-bottom: 60px;
+            color: var(--primary-cyan);
+            text-align: center;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(
+                to bottom,
+                var(--primary-cyan) 0%,
+                var(--primary-purple) 100%
+            );
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            width: 45%;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            background: rgba(0, 217, 255, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+        }
+
+        .timeline-date {
+            font-family: 'Roboto Mono', monospace;
+            color: var(--primary-cyan);
+            font-size: 14px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .timeline-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: var(--text-white);
+        }
+
+        .timeline-content h4 {
+            font-size: 18px;
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .timeline-content p {
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--primary-cyan);
+            border: 4px solid var(--dark-bg);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .education-section {
+                padding: 120px 20px 60px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                flex-direction: column;
+                padding-left: 50px;
+            }
+
+            .timeline-content {
+                width: 100%;
+            }
+
+            .timeline-marker {
+                left: 20px;
+            }
+        }
+    </style>
+   </head>
+   <body>
+      <!-- Navigation -->
+      <header class="main-header">
+         <nav class="navbar">
+            <div class="logo">
+               <a href="../index.html" class="logo-btn">ONLINE PORTFOLIO</a>
+            </div>
+            <ul class="nav-links">
+               <li><a href="about.html">ABOUT ME</a></li>
+               <li><a href="education.html" class="active">EDUCATION</a></li>
+               <li><a href="experience.html">EXPERIENCE</a></li>
+               <li><a href="projects.html">PROJECT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="progress-indicator">
+               <div class="progress-bar"></div>
+            </div>
+            <div class="mobile-menu-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </nav>
+      </header>
+
+      <!-- Education Section -->
+      <section class="education-section">
+         <div class="education-container">
+            <h2 class="section-title">EDUCATION</h2>
+
+            <div class="timeline">
+               <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                     <div class="timeline-date">2022 - 2026 
+                        (present)</div>
+                     <h3>Bachelor of Science Computer Science</h3>
+                     <h4>University of Embu - School of Pure and Applied Sciences</h4>
+                     <p>
+                        Specializing in Film & Television Production with a focus
+                        on digital content
+                        creation. Graduated with honors and received the Dean's
+                        Award for Excellence
+                        in Visual Storytelling.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                     <div class="timeline-date">2024</div>
+                     <h3>Frontend Development Certificate</h3>
+                     <h4>Udemy </h4>
+                     <p>
+                        Completed an intensive online course on React
+                        development, covering topics such as component-based
+                        architecture, state management, and hooks. Gained hands-on
+                        experience building dynamic web applications using React.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                     <div class="timeline-date">2018-2022</div>
+                     <h3> Kenya Certificate of Education</h3>
+                     
+                     <p>
+                        Completed secondary education with a focus on science
+                        subjects including
+                        Mathematics, Physics, Chemistry, and Biology. Actively
+                        participated in
+                        extracurricular activities such as the Science Club and
+                        Debate Team.
+                     </p>
+                  </div>
+               </div>
+               <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                     <div class="timeline-date">2010-2017</div>
+                     <h3>Primary Education</h3>
+                     <h4>Kenya Certificate of Primary Education</h4>
+                     <p>
+                        Completed primary education with a strong foundation in
+                        core subjects.
+                        Actively engaged in school activities and demonstrated
+                        leadership skills as
+                        a class representative.
+                     </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Page Dots -->
+      <div class="page-dots">
+         <span class="dot" data-page="0"></span>
+         <span class="dot" data-page="1"></span>
+         <span class="dot active" data-page="2"></span>
+         <span class="dot" data-page="3"></span>
+         <span class="dot" data-page="4"></span>
+         <span class="dot" data-page="5"></span>
+      </div>
+
+      <script src="../js/script.js"></script>
+   </body>
+</html>

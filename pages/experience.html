@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Experience - Alexander Aronowitz</title>
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/navigation.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+      <style>
+        .experience-section {
+            min-height: 100vh;
+            padding: 140px 80px 80px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+
+        .experience-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            margin-bottom: 60px;
+            color: var(--primary-cyan);
+        }
+
+        .experience-grid {
+            display: grid;
+            gap: 40px;
+        }
+
+        .experience-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-cyan);
+            transition: all 0.3s ease;
+        }
+
+        .experience-card:hover {
+            background: rgba(0, 217, 255, 0.1);
+            transform: translateX(10px);
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+
+        .experience-title h3 {
+            font-size: 28px;
+            color: var(--text-white);
+            margin-bottom: 5px;
+        }
+
+        .experience-title h4 {
+            font-size: 18px;
+            color: var(--primary-cyan);
+            font-weight: 500;
+        }
+
+        .experience-date {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+            color: var(--text-gray);
+            white-space: nowrap;
+            background: rgba(0, 217, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        .experience-description {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .responsibilities {
+            list-style: none;
+            padding: 0;
+        }
+
+        .responsibilities li {
+            color: var(--text-gray);
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .responsibilities li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-cyan);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background: rgba(157, 78, 221, 0.2);
+            color: var(--primary-purple);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        @media (max-width: 768px) {
+            .experience-section {
+                padding: 120px 20px 60px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .experience-card {
+                padding: 25px;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .experience-title h3 {
+                font-size: 22px;
+            }
+
+            .experience-date {
+                align-self: flex-start;
+            }
+        }
+    </style>
+   </head>
+   <body>
+      <!-- Navigation -->
+      <header class="main-header">
+         <nav class="navbar">
+            <div class="logo">
+               <a href="../index.html" class="logo-btn">ONLINE PORTFOLIO</a>
+            </div>
+            <ul class="nav-links">
+               <li><a href="about.html">ABOUT ME</a></li>
+               <li><a href="education.html">EDUCATION</a></li>
+               <li><a href="experience.html" class="active">EXPERIENCE</a></li>
+               <li><a href="projects.html">PROJECT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="progress-indicator">
+               <div class="progress-bar"></div>
+            </div>
+            <div class="mobile-menu-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </nav>
+      </header>
+
+      <!-- Experience Section -->
+      <section class="experience-section">
+         <div class="experience-container">
+            <h2 class="section-title">EXPERIENCE</h2>
+
+            <div class="experience-grid">
+               <div class="experience-card">
+                  <div class="experience-header">
+                     <div class="experience-title">
+                        <h3>Sofware Engineer Intern</h3>
+                        <h4>Twiga One Foods</h4>
+                     </div>
+                     <div class="experience-date"> March - October (2025)</div>
+                  </div>
+                  <p class="experience-description">
+                     Developed and maintained tech services for a food
+                     distribution platform
+                     using Python, Docker, and Kubernetes. Collaborated with
+                     cross-functional teams to
+                     deliver scalable solutions in an Agile environment.
+                  </p>
+                  <ul class="responsibilities">
+                     <li> Designed and containerized backend services in Python
+                        using REST and GraphQL APIs; deployed via Kubernetes
+                        (GKE) as part of scalable microservices systems.
+                     </li>
+                     <li>uilt and automated data pipelines and database
+                        migrations, improving reliability and reducing
+                        migration-related issues by ~80%.</li>
+                     <li>Collaborated with cross-functional teams to define
+                        project requirements, develop technical specifications,
+                        and deliver high-quality software solutions on
+                        time.</li>
+                     <li>Participated in architecture discussions and code
+                        reviews, contributing to long-term design decisions and
+                        improving system reliability and maintainability.</li>
+                  </ul>
+                  <div class="skills-tags">
+                     <span class="skill-tag">Devops</span>
+                     <span class="skill-tag">React</span>
+                     <span class="skill-tag">Typescript</span>
+                     <span class="skill-tag">Team collaborations</span>
+                  </div>
+               </div>
+
+               <div class="experience-card">
+                  <div class="experience-header">
+                     <div class="experience-title">
+                        <h3>Freelance AI Solutions Developer</h3>
+                        <h4>Independent</h4>
+                     </div>
+                     <div class="experience-date">2024 - Present</div>
+                  </div>
+                  <p class="experience-description">
+                     Designed and delivered lightweight AI-driven tools for
+                     individuals and
+                     small businesses, focusing on automation, data
+                     organization, and
+                     productivity optimization.
+                  </p>
+                  <ul class="responsibilities">
+                     <li>Built custom Python-based automation scripts for data
+                        cleaning,
+                        sentiment analysis, and workflow optimization.</li>
+                     <li>Developed end-to-end AI prototypes, including an
+                        expense insights
+                        system and emotion analysis pipeline.</li>
+                     <li>Collaborated with clients to identify pain points and
+                        translate
+                        them into practical, user-centered technical
+                        solutions.</li>
+                     </ul>
+                     <div class="skills-tags">
+                        <span class="skill-tag">AI</span>
+                        <span class="skill-tag">Python, React</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Data analysis</span>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <!-- Page Dots -->
+         <div class="page-dots">
+            <span class="dot" data-page="0"></span>
+            <span class="dot" data-page="1"></span>
+            <span class="dot" data-page="2"></span>
+            <span class="dot active" data-page="3"></span>
+            <span class="dot" data-page="4"></span>
+            <span class="dot" data-page="5"></span>
+         </div>
+
+         <script src="../js/script.js"></script>
+      </body>
+   </html>

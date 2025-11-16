@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Projects - Beryl Nyauma</title>
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/navigation.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+      <style>
+        .projects-section {
+            min-height: 100vh;
+            padding: 140px 80px 80px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+
+        .projects-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            margin-bottom: 60px;
+            color: var(--primary-cyan);
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 217, 255, 0.3);
+            border-color: var(--primary-cyan);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, var(--primary-cyan) 0%, var(--primary-purple) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::after {
+            content: 'VIEW PROJECT';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 217, 255, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .project-image::after {
+            opacity: 1;
+        }
+
+        .project-content {
+            padding: 30px;
+        }
+
+        .project-category {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 12px;
+            color: var(--primary-cyan);
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .project-content h3 {
+            font-size: 24px;
+            color: var(--text-white);
+            margin-bottom: 15px;
+        }
+
+        .project-content p {
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .project-tag {
+            background: rgba(157, 78, 221, 0.2);
+            color: var(--text-gray);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 1024px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .projects-section {
+                padding: 120px 20px 60px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .project-image {
+                height: 250px;
+            }
+
+            .project-content {
+                padding: 20px;
+            }
+        }
+    </style>
+   </head>
+   <body>
+      <!-- Navigation -->
+      <header class="main-header">
+         <nav class="navbar">
+            <div class="logo">
+               <a href="../index.html" class="logo-btn"> PORTFOLIO</a>
+            </div>
+            <ul class="nav-links">
+               <li><a href="about.html">ABOUT ME</a></li>
+               <li><a href="education.html">EDUCATION</a></li>
+               <li><a href="experience.html">EXPERIENCE</a></li>
+               <li><a href="projects.html" class="active">PROJECT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="progress-indicator">
+               <div class="progress-bar"></div>
+            </div>
+            <div class="mobile-menu-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </nav>
+      </header>
+
+      <!-- Projects Section -->
+      <section class="projects-section">
+         <div class="projects-container">
+            <h2 class="section-title">SELECTED PROJECTS</h2>
+
+            
+
+               
+
+               
+
+              
+               <div class="project-card">
+                  <div class="project-image">💼</div>
+                  <div class="project-content">AI + EMOTION ANALYSIS
+                     <div class="project-category">    </div>
+                     <h3>Multimodal Emotion Analysis System</h3>
+                     <p>
+                        AI-powered emotion analyzer combining DeepFace facial recognition and Librosa audio processing for video narratives. 
+                     </p>
+                     <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">OpenCV</span>
+                        <span class="project-tag">Librosa</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="project-card">
+                  <div class="project-image">🌟</div>
+                  <div class="project-content">
+                     <div class="project-category">AI + FINTECH</div>
+                     <h3>Smart Expense Tracker</h3>
+                     <p>
+                        Developed an intelligent personal finance tracker that analyzes 
+   spending patterns using Python-based machine learning and provides 
+   monthly insights, automated categorization, and AI-generated 
+   financial summaries.
+</p>
+                     </p>
+                     <div class="project-tags">
+                        <span class="project-tag">AI, React</span>
+                        <span class="project-tag">Python, Data analysis</span>
+                        <span class="project-tag">FastAPI</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Page Dots -->
+      <div class="page-dots">
+         <span class="dot" data-page="0"></span>
+         <span class="dot" data-page="1"></span>
+         <span class="dot" data-page="2"></span>
+         <span class="dot" data-page="3"></span>
+         <span class="dot active" data-page="4"></span>
+         <span class="dot" data-page="5"></span>
+      </div>
+
+      <script src="../js/script.js"></script>
+   </body>
+</html>
